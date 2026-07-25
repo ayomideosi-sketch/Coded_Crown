@@ -175,8 +175,8 @@ body.light-mode #Contact .contact-features div{
     border: 1px solid #64748b;
 }
 body.light-mode .scroll-top{
-    color: #0f172a;
-    background: linear-gradient(127deg, #00f7ff, #7c3aed, #fff);
+    color: #f6f7f8;
+    background: linear-gradient(135deg, #0f172a, #7c3aed03);
 }
 body.light-mode .secondary{
     border: 1px solid #475569;
@@ -190,6 +190,9 @@ body.light-mode .project-link a{
 }
 body.light-mode .tech-stack span{
     color: #64748b;
+}
+body.light-mode .social-icon a::before{
+    background: linear-gradient(135deg, #0f172a, #7c3aed03);
 }
 /*changing of skill box-shadow
 /* body.light-mode waveGlow{
@@ -223,6 +226,12 @@ body.light-mode .glass-orb{
 body.light-mode #Contact p{
     background: linear-gradient(135deg, #0f172a, #7c3aed03);
     background-size: 300% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.light-mode #Contact .contact-features i{
+    background: linear-gradient(130deg, #0f172a, #7c3aed03);
+    background-size: 80% 70%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

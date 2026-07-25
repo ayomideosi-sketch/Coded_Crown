@@ -337,6 +337,55 @@ nav a:hover span{
     align-items: center;
     font-size: 1.3rem;
 }
+.social-icon{
+    margin-top: 5%;
+    text-align: center;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.social-icon a{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.social-icon a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00f5ff, #7c3aed, #ffffff);
+    opacity: 0;
+    transition: .4s;
+}
+.social-icon a i{
+    position: relative;
+    z-index: 2;
+}
+.social-icon a:hover{
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.4),
+    0 0 45px rgba(124, 58, 237, 0.3);
+}
+.social-icon a:hover::before{
+    opacity: 1;
+}
 .btn1{
     border: 1px solid rgba(225, 225, 225, 0.09);
     padding: 14px 45px;
@@ -532,7 +581,7 @@ nav a:hover span{
     border-radius: 15px;
 }
 .project-link{
-    margin: 30px 0 25px 8%;
+    margin: 30px 0 25px 6%;
 }
 .project-link a{
     cursor: none;
@@ -543,7 +592,7 @@ nav a:hover span{
     background: linear-gradient(135deg, #06b6d4, #7c3aed);
     color: white;
     transition: .3s;
-    padding: 10px 150px;
+    padding: 10px 120px;
 }
 .project-link a:hover{
     box-shadow: 0 0 15px rgba(6,182,212,.5),
@@ -601,7 +650,7 @@ nav a:hover span{
 }
 #Contact p{
     text-align: center;
-    margin-left: 29%;
+    margin-left: 22%;
     max-width: 700px;
     font-size: 1.5rem;
     line-height: 1.7;
